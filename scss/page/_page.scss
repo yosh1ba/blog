@@ -1,0 +1,56 @@
+.entry-page {
+    width: 100%;
+
+    @include mq('tab') {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    @include mq('sp') {
+        width: 100%;
+    }
+    
+    .hr-wide {
+        margin-top: 10px;
+    }
+    
+    .hr-narrow {
+
+        margin-top: 20px;
+
+         &.top {
+    
+            margin-top: 15px;
+        }
+
+    }
+
+    h2 {
+        margin-top: 50px;
+        background-color: $color-bg-header;
+        padding-left: 15px;
+        color: $color-ft-light;
+        line-height: 50px;
+        border-left: $color-accent 10px solid;
+        @include mq('sp') {
+            font-size: 2.2rem;
+        }
+    }
+
+    h3 {
+        border-bottom: $coro-border-box 4px solid;
+        margin-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    h4 {
+        margin-top: 30px;
+        &~ p{
+            margin-top: 10px;
+        }
+    }
+
+    > p {
+        margin-top: 20px;
+    }
+}

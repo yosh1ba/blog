@@ -1,0 +1,41 @@
+.entry-404 {
+    text-align: center;
+}
+
+.entry-404-header {
+    margin-top: 40px;
+    font-size: 80px;
+    color: $color-ft-main;
+    opacity: .5;
+
+    @include mq('sp') {
+        font-size: 40px;
+    }
+}
+
+.entry-404-lead {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color:$color-ft-dark;
+    opacity: .5;
+
+    @include mq('sp') {
+        font-size: 16px;
+    }
+}
+
+.entry-404-content {
+    margin-top: 20px;
+    color:$color-ft-dark;
+    opacity: .7;
+}
+
+.entry-404-btn {
+    margin-top: 45px;
+
+    .btn {
+        padding: 15px 70px;
+        background-color: $color-btn-404;
+    }
+}

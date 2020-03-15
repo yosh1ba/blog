@@ -1,0 +1,194 @@
+.breadcrumbs-item {
+    background-color: $color-white;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $color-ft-dark;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @include mq('sp') {
+        font-size: 1.4rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.taxonomy {
+    margin-right: 10px;
+}
+
+.contents {
+    background-color: $color-white;
+    margin-top: 30px;
+    padding: 20px 30px 40px 30px;
+
+    @include mq('tab') {
+        display: block;
+    }
+
+    @include mq('sp') {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.entry {
+    width: 684px;
+    margin-right: 40px;
+
+    @include mq('tab') {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    @include mq('sp') {
+        width: 100%;
+    }
+    
+    .hr-wide-solid {
+        margin-top: 10px;
+    }
+    
+    .hr-narrow-dotted {
+
+        margin-top: 20px;
+
+         &.top {
+    
+            margin-top: 15px;
+        }
+
+    }
+}
+
+.post-content {
+    margin: 20px 15px 0 15px;
+
+    @include mq('tab') {
+        margin: 20px 0 0 0;
+    }
+
+    @include mq('sp') {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include a-all();
+}
+
+.post-content-left {
+    position: relative;
+
+    @include mq('sp') {
+        width: 84vw;
+        margin: 0 auto;
+    }
+}
+
+.post-thumbnail {
+
+    @include mq('tab') {
+        width: 28vw;
+        height: auto;
+    }
+
+    @include mq('sp') {
+        width: 84vw;
+        height: auto;
+    }
+}
+
+.noimage {
+    width: 270px;
+    height: auto;
+}
+
+.category-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $color-accent;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 22px;
+
+}
+
+.post-content-right {
+    margin-left: 15px;
+    @include mq('sp') {
+        margin-left: 0;
+    }
+}
+
+.post-content-left {
+    @include mq('sp') {
+        text-align: center;
+    }
+}
+
+.post-content-header {
+    font-size: 2.0rem;
+
+    @include mq('sp') {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+}
+
+.post-content-date {
+    margin-top: 10px;
+
+    p:nth-of-type(2){
+        margin-left: 30px;
+
+        @include mq('tab') {
+            margin-left: 15px;
+        }
+        
+        @include mq('sp') {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.post-content-detail {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+    @include mq('tab') {
+        margin-bottom: 40px;
+    }
+}
+
+.page-numbers {
+    border: #002345 1px solid;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+    display: inline-block;
+
+    @include mq('sp') {
+        height: 30px;
+        margin-right: 10px;
+        min-width: 30px;
+        padding-top: 5px;
+    }
+}
+
+.current {
+    background-color: $color-bg-pagination;
+    color: $color-ft-light;
+    opacity: 1 !important;
+}

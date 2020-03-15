@@ -1,0 +1,17 @@
+@mixin a-all() {
+    position: relative;
+    z-index: 1;
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            opacity: .5;
+            background-color: $color-white;
+        }
+    }
+  }

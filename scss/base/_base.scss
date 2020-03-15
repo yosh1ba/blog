@@ -1,0 +1,89 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato','Noto Sans JP','Yu Gothic';
+    font-size: 1.6em;
+    margin: 0;
+    color:$color-ft-dark;
+    background-color: $color-bg-main;
+}
+
+button {
+    font-family: 'Lato','Noto Sans JP','Yu Gothic';
+}
+
+.wrapper {
+    max-width: $layout-width-inner;
+    padding: 0 30px; 
+    margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 15px;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inblock {
+    display: inline-block;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer !important;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.p-small {
+    font-size: 1.4rem;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.hr-wide-solid {
+    border: $color-border 3px solid;
+}
+
+.hr-mid-solid {
+    border: $color-border 2px solid;
+}
+
+.hr-narrow-dotted {
+    border: $color-border 1px dotted;
+}
+
+.hr-narrow-solid {
+    border: $color-border 1px solid;
+}
+
+.far, .fas {
+    margin-right: 5px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
